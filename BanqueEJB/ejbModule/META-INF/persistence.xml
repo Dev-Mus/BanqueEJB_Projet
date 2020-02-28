@@ -3,6 +3,9 @@
 	<persistence-unit name="BanqueEJB" transaction-type="JTA">
 		<jta-data-source>java:jboss/dataSource/dsBanque</jta-data-source>
 		<class>com.versionbeta.banque.entity.Compte</class>
+		<class>com.versionbeta.banque.entity.Client</class>
+		<class>com.versionbeta.banque.entity.Operation</class>
+		<class>com.versionbeta.banque.entity.Employe</class>
 		<properties>
 			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
 		</properties>
